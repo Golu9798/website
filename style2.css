@@ -1,338 +1,226 @@
-/* ===== GLOBAL STYLES ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Golu Kumar | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="script2.js"></script>
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+      <div class="logo">Golu Kumar</div>
+      <nav class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-body {
-  background: #f4f6fb;
-  color: #111;
-}
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <h1>Golu <span>Kumar</span></h1>
+      <h2>Java Full Stack Developer</h2>
+      <p>
+        Passionate Java Full Stack Developer focused on building scalable,
+        secure and user-friendly web applications.
+      </p>
+      <a href="media/image/Javaresume.pdf" target="_blank" class="btn">
+        Download Resume
+      </a>
+    </section>
 
-/* ===== HEADER ===== */
-.main-header {
-  width: 100%;
-  padding: 14px 24px;
-  background: linear-gradient(90deg, #0f172a, #1e293b);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-}
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="frame">
+        <h3>About Me</h3>
+        <div class="content-box">
+          <p>
+            I am currently training as a Java Full Stack Developer at KodNest
+            Technologies, Bengaluru, where I am building end-to-end web
+            applications using Java, SQL, HTML, CSS, and JavaScript. My focus is
+            on developing scalable, maintainable, and user-centric solutions,
+            while continuously strengthening my skills in data structures and
+            algorithms (DSA). With a strong foundation in problem-solving and
+            logical thinking, I am passionate about leveraging technology to
+            address real-world challenges.
+          </p>
+        </div>
+      </div>
+    </section>
 
-.logo {
-  font-size: 22px;
-  font-weight: 800;
-  color: #38bdf8;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
+    <!-- ================= JOURNEY ================= -->
+    <section class="section" id="journey">
+      <div class="frame">
+        <h3>My Journey</h3>
+        <div class="content-box">
+          <p class="color-text">
+            My journey started during my B.Tech where I learned Java, SQL, HTML,
+            CSS and JavaScript through hands-on projects and practice.
+          </p>
+        </div>
+      </div>
+    </section>
 
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  white-space: nowrap;
-  flex-wrap: nowrap;
-}
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="frame">
+        <h3>Skills</h3>
+        <div class="skills">
+          <span>Java</span>
+          <span>SQL</span>
+          <span>MySQL</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Git & GitHub</span>
+          <span>DSA</span>
+        </div>
+      </div>
+    </section>
 
-.nav-menu a {
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: #e5e7eb;
-  padding: 4px 0;
-  position: relative;
-  flex-shrink: 0;
-}
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section class="section" id="achievements">
+      <div class="frame">
+        <h3>Achievements</h3>
+        <div class="content-box">
+          <ul>
+            <li>Completed Java Full Stack Training</li>
+            <li>Built multiple academic projects</li>
+            <li>Strong problem-solving skills</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-.nav-menu a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: #38bdf8;
-  transition: 0.3s;
-}
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="frame">
+        <h3>Education</h3>
+        <div class="grid-3">
+          <div class="card">
+            <strong>B.Tech (CSE)</strong><br />
+            <span class="color-text">CGPA: 7.04</span>
+          </div>
+          <div class="card">
+            <strong>12th</strong><br />
+            <span class="color-text">68.50%</span>
+          </div>
+          <div class="card">
+            <strong>10th</strong><br />
+            <span class="color-text">65.25%</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.nav-menu a:hover::after {
-  width: 100%;
-}
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience">
+      <div class="frame">
+        <h3>Professional Experience</h3>
+        <div class="content-box">
+          <p class="color-text">
+            Full Stack Java Developer Trainee at KodNest Technologies Pvt Ltd,
+            Bengaluru (2025 – Present). Training in Core Java, SQL, HTML, CSS,
+            JavaScript. Building and deploying full stack web applications.
+            Practicing data structures and algorithms. Developed AI-powered
+            projects using Gemini API and Firebase. Learnt Spring Boot and
+            advanced JavaScript concepts.
+          </p>
+        </div>
+      </div>
+    </section>
 
-/* ===== HERO ===== */
-.hero {
-  background: linear-gradient(135deg, #020617, #1e40af, #06b6d4);
-  color: white;
-  text-align: center;
-  padding: 100px 20px 80px 20px;
-}
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="frame">
+        <h3>Projects</h3>
+        <div class="grid-4">
+          <div class="card">
+            <strong>AI Job Portal</strong>
+            <p class="color-text">
+              Developed a LinkedIn-style job portal using JavaScript, Firebase,
+              and Gemini API. Real-time job postings, AI-driven resume analysis,
+              automated mock interviews, responsive UI.
+            </p>
+          </div>
+          <div class="card">
+            <strong>Employee Management System</strong>
+            <p class="color-text">
+              Desktop-based EMS built with Hibernate ORM and Java Swing. CRUD
+              operations for employee records with MySQL database. Clean
+              separation of concerns and ORM-based persistence.
+            </p>
+          </div>
+          <div class="card">
+            <strong>Portfolio Website</strong>
+            <p class="color-text">
+              AI-powered mock interview simulator using Gemini API, webcam
+              integration, live speech-to-text feedback, dynamic question
+              generation, real-time performance analytics.
+            </p>
+          </div>
+          <div class="card">
+            <strong>Mock Interview System</strong>
+            <p class="color-text">
+              AI-powered interview simulator with Gemini API, real-time webcam,
+              live speech-to-text transcription. Instant feedback for improving
+              interview readiness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-.hero h1 {
-  font-size: 42px;
-}
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="frame">
+        <h3>Contact</h3>
 
-.hero span {
-  color: #22d3ee;
-}
+        <div class="contact-boxes">
+          <div class="info">👤 Golu Kumar</div>
+          <div class="info">📧 golukumar754188@gmail.com</div>
+          <div class="info">📞 9798866324</div>
+        </div>
 
-.hero h2 {
-  font-size: 26px;
-  margin: 10px 0 20px 0;
-}
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/golu-kumar-561850327"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/Golu9798" target="_blank">GitHub</a>
+        </div>
 
-.hero p {
-  max-width: 600px;
-  margin: 0 auto 20px auto;
-  font-size: 16px;
-}
+        <!-- MESSAGE FORM -->
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-send">Send Message</button>
+        </form>
 
-.btn {
-  margin: 10px;
-  padding: 12px 26px;
-  background: #22d3ee;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-}
+        <button
+          class="btn btn-receive"
+          id="receiveBtn"
+          style="margin-top: 20px"
+        >
+          Received Messages
+        </button>
 
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
+        <div id="messageList" style="display: none; margin-top: 20px"></div>
+      </div>
+    </section>
 
-/* ===== TOP LINE ===== */
-.top-line {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 30px;
-  background: #e0f2fe;
-  flex-wrap: wrap;
-}
+    <footer>© 2026 Golu Kumar | All Rights Reserved</footer>
 
-.top-box {
-  background: linear-gradient(135deg, #6366f1, #22d3ee);
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: center;
-  width: 260px;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+    <script src="script.js"></script>
+  </body>
+</html>
 
-/* ===== SECTIONS ===== */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-  position: relative;
-}
-
-.about {
-  background: #fef3c7;
-}
-.journey {
-  background: #dcfce7;
-}
-.skills-section {
-  background: #e0f2fe;
-}
-.achievements {
-  background: #fae8ff;
-}
-.education {
-  background: #ffe4e6;
-}
-.experience {
-  background: #ecfeff;
-}
-.projects {
-  background: #f1f5f9;
-}
-.contact {
-  background: #cffafe;
-}
-
-.section h3 {
-  margin-bottom: 25px;
-  color: #1e3a8a;
-  font-size: 28px;
-}
-
-/* ===== SKILLS ===== */
-.skills {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.skills span {
-  background: linear-gradient(90deg, #4f46e5, #06b6d4);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 20px;
-  font-weight: 500;
-}
-
-/* ===== CARDS ===== */
-.card {
-  background: white;
-  max-width: 600px;
-  margin: 12px auto;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  font-size: 16px;
-}
-
-/* ===== PROJECT GRID ===== */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* ===== CONTACT SECTION ===== */
-.contact h3 {
-  color: #1e3a8a;
-  font-size: 32px;
-  margin-bottom: 40px;
-}
-
-.contact-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.contact-box {
-  padding: 20px 25px;
-  border-radius: 15px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  min-width: 180px;
-  transition:
-    transform 0.3s,
-    box-shadow 0.3s;
-}
-
-.contact-box strong {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.contact-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* ===== COLORS FOR BOXES ===== */
-.name-box {
-  background: linear-gradient(135deg, #4f46e5, #06b6d4);
-  color: white;
-}
-
-.number-box {
-  background: linear-gradient(135deg, #6366f1, #22d3ee);
-  color: white;
-}
-
-.email-box {
-  background: linear-gradient(135deg, #4ade80, #16a34a);
-  color: white;
-}
-
-.linkedin-box {
-  background: linear-gradient(135deg, #0077b5, #00a0dc);
-  color: white;
-  min-width: 220px;
-}
-
-.github-box {
-  background: linear-gradient(135deg, #333333, #6e5494);
-  color: white;
-  min-width: 220px;
-}
-
-.contact-box a {
-  color: inherit;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.contact-box a:hover {
-  color: #fcd34d;
-}
-
-/* ===== FORM ===== */
-form#contactForm {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-form#contactForm input,
-form#contactForm textarea {
-  padding: 12px 15px;
-  border-radius: 10px;
-  border: 2px solid #facc15;
-  font-size: 16px;
-  outline: none;
-  transition:
-    border-color 0.3s,
-    box-shadow 0.3s;
-}
-
-form#contactForm input:focus,
-form#contactForm textarea:focus {
-  border-color: #f59e0b;
-  box-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
-}
-
-.contact-btn {
-  padding: 14px 25px;
-  background: linear-gradient(90deg, #4f46e5, #06b6d4);
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-}
-
-.contact-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: linear-gradient(90deg, #0f172a, #1e293b);
-  color: #38bdf8;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  font-weight: 500;
-}
