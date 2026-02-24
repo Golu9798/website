@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+/* HEADER */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 35px;
+  background: linear-gradient(90deg, #2563eb, #06b6d4, #22d3ee);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #020617;
+}
+
+.nav-menu a {
+  color: #020617;
+  margin-left: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: radial-gradient(circle, #1e3a8a, #020617);
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero span {
+  color: #22d3ee;
+}
+
+.hero h2 {
+  color: #a5f3fc;
+}
+
+/* Download Resume Button */
+.hero a.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #22d3ee, #6366f1);
+  color: #020617;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero a.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #22d3ee;
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  width: 100%;
+  max-width: 1050px;
+  background: linear-gradient(135deg, #020617, #1e293b);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.4);
+}
+
+.frame h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #22d3ee;
+  font-weight: bold;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  border-radius: 25px;
+  color: #020617;
+  font-weight: bold;
+}
+
+/* GRID */
+.grid-3,
+.grid-4 {
+  display: grid;
+  gap: 25px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+  font-weight: bold;
+  background: linear-gradient(135deg, #0ea5e9, #22d3ee, #6366f1);
+  color: #020617;
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.6);
+  transition: 0.3s;
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+/* CONTACT */
+.contact-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info {
+  padding: 14px 24px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #22d3ee, #6366f1);
+  color: #020617;
+  font-weight: bold;
+}
+
+.social {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.social a {
+  margin: 0 15px;
+  font-size: 17px;
+  color: #22d3ee;
+  font-weight: bold;
+}
+
+/* FORM */
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  background: #020617;
+  color: #22d3ee;
+  box-shadow: inset 0 0 10px rgba(34, 211, 238, 0.4);
+}
+
+form textarea {
+  resize: none;
+  height: 110px;
+}
+
+form button {
+  width: 100%;
+}
+
+/* MESSAGE LIST */
+#messageList div {
+  background: linear-gradient(135deg, #22d3ee, #6366f1);
+  color: #020617;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.7);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 18px;
+  background: linear-gradient(90deg, #06b6d4, #22d3ee);
+  color: #020617;
+  font-weight: bold;
+}
+/* Contact buttons */
+.btn-send {
+  background: linear-gradient(135deg, #22d3ee, #6366f1, #a78bfa);
+  color: #020617;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.btn-send:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #22d3ee;
+}
+
+.btn-receive {
+  background: linear-gradient(135deg, #facc15, #f43f5e, #22d3ee);
+  color: #020617;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.btn-receive:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #facc15;
+}
+/* Gradient colored content box for theory/text */
+.content-box {
+  background: linear-gradient(135deg, #22d3ee, #6366f1, #a78bfa);
+  color: #020617;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.5);
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* For lists inside content box */
+.content-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.content-box ul li {
+  margin-bottom: 8px;
+}
